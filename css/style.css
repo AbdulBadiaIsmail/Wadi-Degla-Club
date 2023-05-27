@@ -1,0 +1,348 @@
+main {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+/* //////////////////////////////////// */
+:root {
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  background-color: #232323;
+  position: fixed;
+  z-index: 999;
+}
+header .logo {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+}
+
+header .logo img {
+  width: 100%;
+  height: 80px;
+}
+/* ************************* */
+header nav {
+  width: 40%;
+  height: 80px;
+  position: absolute;
+  right: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  width: 150px;
+  height: 80px;
+  box-sizing: border-box;
+}
+nav ul li a {
+  color: #fff;
+  line-height: 80px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: brown;
+}
+/* ************aside#### */
+/* ###################################################### */
+aside {
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+aside a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  line-height: 60px;
+  transition: 1s;
+  position: relative;
+  left: -160px;
+  text-align: right;
+}
+aside a:hover {
+  left: 0;
+}
+/* /////////////////// */
+section {
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(#e78e09, yellow);
+}
+
+section img {
+  width: 100%;
+  height: 700px;
+  clip-path: circle(55% at 50% 45%);
+}
+/* ********** sportsacademy********* */
+.sportsacademy {
+  width: 80%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  top: -70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tennisacademy {
+  width: 20%;
+  height: 150px;
+  background: #fff url(../images/tennisacademy.jpg) no-repeat;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  border: 2px solid #fddd00;
+  border-radius: 10px;
+}
+.join1 {
+  width: 100%;
+  height: 100%;
+  background: rgba(253, 221, 0, 0.7);
+  overflow: hidden;
+  color: #000;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: bold;
+  clip-path: circle(5px at 0 0);
+  transition: all 0.5s;
+}
+.tennisacademy:hover .join1 {
+  clip-path: circle(80% at 0 0);
+}
+
+/* ************endsportsacademy */
+/* **** start about ##################################################*/
+.about {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  top: -60px;
+  margin: auto;
+  overflow: hidden;
+}
+.about h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  text-transform: capitalize;
+  color: blue;
+}
+.about hr {
+  width: 30%;
+  color: #232323;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.abouttext {
+  width: 49%;
+  height: 300px;
+  color: #434c9c;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  text-align: justify;
+}
+.abouttext p {
+  font-size: medium;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.aboutimage {
+  width: 45%;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  background: #fff url(../images/about.jpg) no-repeat center/cover;
+}
+.aboutimage:hover img {
+  cursor: pointer;
+}
+/* *********end ################################################## */
+/* ****start our-schedule ################################################## */
+.our-schedule {
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.our-schedule h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  text-transform: capitalize;
+  color: blue;
+  margin: 0;
+}
+.our-schedule hr {
+  width: 30%;
+  color: #232323;
+  margin: auto;
+}
+.contact {
+  width: 100%;
+  height: 400px;
+}
+table {
+  width: 100%;
+  margin: auto;
+  font-size: xx-large;
+  border-collapse: collapse;
+  height: 350px;
+  text-indent: 60px;
+  text-align: center;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background: #fff;
+  color: #000;
+}
+table tr {
+  text-align: center;
+  text-transform: uppercase;
+  background: #ccc5;
+  color: black;
+  text-align: center;
+}
+/* ***end our-schedule################################################## */
+/* ***start section2-latast################################################## */
+.section2-latast {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.section2-latast h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: blue;
+  margin: 10px;
+}
+.section2-latast hr {
+  width: 30%;
+  color: #232323;
+  margin: auto;
+}
+.naws {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block1 {
+  width: 27%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.block1 img {
+  width: 100%;
+}
+h5 {
+  font-size: 20px;
+  color: blue;
+  margin: 0;
+}
+.block1 p {
+  text-indent: 10px;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+/* **** ##################################################*/
+
+/* end section2-latast################################################## */
+/* ****start section -6 ################################################## */
+.section-6 {
+  width: 80%;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background: #fddd00;
+  margin: auto;
+}
+.section-block-1 {
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  bottom: 0;
+}
+.section-block-1 img {
+  width: 100%;
+}
+.section-block-2 {
+  width: 45%;
+  height: 300px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.section-block-2 video {
+  width: 100%;
+  height: 300px;
+}
+
+/* end section-6 ##################################################*/
+/* start section-7 ##################################################*/
+.section-7 {
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+  background: #232323;
+}
+
+/* end section -7 ##################################################*/
+/* start footer ################################################## */
+footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 40px;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 40px;
+}
